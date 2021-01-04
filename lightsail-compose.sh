@@ -20,7 +20,7 @@ curl -o /srv/docker/docker-compose.yml https://github.com/mousepurple/n8n/blob/m
 
 # copy in systemd unit file and register it so our compose file runs 
 # on system restart
-curl -o /etc/systemd/system/docker-compose-app.service https://raw.githubusercontent.com/mikegcoleman/todo/master/docker-compose-app.service
+curl -o /etc/systemd/system/docker-compose-app.service https://github.com/mousepurple/n8n/blob/main/docker-compose-app.service
 systemctl enable docker-compose-app
 
 # start up the application via docker-compose
