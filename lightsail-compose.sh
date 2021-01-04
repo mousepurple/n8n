@@ -16,7 +16,7 @@ chmod +x /usr/local/bin/docker-compose
 # if you change this, change the systemd service file to match
 # WorkingDirectory=[whatever you have below]
 mkdir /srv/docker
-curl -o /srv/docker/docker-compose.yml https://raw.githubusercontent.com/mikegcoleman/todo/master/docker-compose.yml
+curl -o /srv/docker/docker-compose.yml https://github.com/mousepurple/n8n/blob/main/docker-compose.yml
 
 # copy in systemd unit file and register it so our compose file runs 
 # on system restart
